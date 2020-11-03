@@ -1,14 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
+import BurgerIngredient from './BurgerIngredient/index';
 
-class Burger extends Component {
+const burger = () => {
 
-    render() {
-        return (
-            <div>
-                Call Burger Ingredients
-            </div>
-        );
-    }
+    return (
+        <div>
+            <BurgerIngredient type='bread-top' />
+            <BurgerIngredient type='bacon' />
+            <BurgerIngredient type='bread-bottom' />
+        </div>
+    );
+
 }
 
-export default Burger;
+export default burger;
