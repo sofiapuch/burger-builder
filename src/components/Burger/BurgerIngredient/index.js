@@ -7,7 +7,7 @@ const burgerIngredient = (props) => {
         return null;
     }
 
-    const ingredientClass = `burgerIngredient burgerIngredient--${props.type}`;
+    const ingredientClass = `burger__ingredient burger__ingredient--${props.type}`;
 
     return (
         <div className={ingredientClass}>{props.type}</div>

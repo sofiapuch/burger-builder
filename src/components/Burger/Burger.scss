@@ -1,0 +1,40 @@
+$bread-border-radius: 30px;
+
+.burger {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    &__ingredient {
+        height: 20px;
+        width: 400px;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        &--cheese {
+            background: linear-gradient(to right, #f5e1a0, #f8d359 80%);
+        }
+
+        &--bacon {
+            background: linear-gradient(to right, #f1adc5,  #f1adc5 80%);
+        }
+
+        &--bread-top,
+        &--bread-bottom {
+            height: 60px;
+            background: linear-gradient(45deg, #ee9056, darken(#ee9056, 15%));
+        }
+
+        &--bread-top {
+            border-top-left-radius: $bread-border-radius;
+            border-top-right-radius: $bread-border-radius;
+        }
+
+        &--bread-bottom {
+            border-bottom-left-radius: $bread-border-radius;
+            border-bottom-right-radius: $bread-border-radius;
+        }
+    }
+}

@@ -4,3 +4,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+// @function rem($size) {
+//   $rem-size: $size / 16;
+//   @return #{$rem-size}rem;
+// }

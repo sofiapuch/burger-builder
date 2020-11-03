@@ -1,3 +1,7 @@
 .layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // margin-top: rem(16);
     margin-top: 16px;
 }
