@@ -1,0 +1,10 @@
+.build-control {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    &__button {
+        cursor: pointer;
+        margin-left: 10px;
+    }
+}
