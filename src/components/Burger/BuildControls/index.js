@@ -3,15 +3,21 @@ import BuildControl from './BuildControl/index';
 
 import './BuildControls.scss';
 
-const buildControls = (props) => {
+const controls = [
+    { label: 'Bacon', type: 'bacon' },
+    { label: 'Beef', type: 'beef' },
+    { label: 'Chicken', type: 'chicken' },
+    { label: 'Cheese', type: 'cheese' },
+    { label: 'Salad', type: 'salad' }
+]
 
-    const controls = props.ingredients.map((ingredient, index) => {
-        return <BuildControl label={ingredient.name} />
-    })
+const buildControls = (props) => {
 
     return (
         <div className="build-controls">
-            {controls}
+            { controls.map((control, index) => {
+                return <BuildControl key={index} label={control.label} />
+            }) }
         </div>
     )
 }

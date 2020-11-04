@@ -6,7 +6,7 @@ import './Burger.scss';
 const burger = (props) => {
 
     const ingredients = props.ingredients.map( ( ingredient, index ) => {
-        return ingredient.amount > 0 ? <BurgerIngredient key={index} type={ingredient.name.toLowerCase()} /> : ''  
+        return ingredient.amount > 0 ? <BurgerIngredient key={index} type={ingredient.type} /> : ''  
     });
 
     return (
